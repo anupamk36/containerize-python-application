@@ -1,15 +1,15 @@
 steps involved:
 
 # To build the image and specify the directory (Make sure to have Docker running)
-docker build -t iris-containerization .
+docker build -t anupam-api .
 
 # Run the build
-docker run -p 9999:9999 iris-containerization
+docker run -p 8000:8000 anupam-api
 
 # Validate using netcat
 nc 0.0.0.0 9999
 
-SAMPLE RESPONSE:
+SAMPLE RESPONSE for iris:
 You are connected!
 [5.1 4.9 4.7 4.6 5.  5.4 4.6 5.  4.4 4.9 5.4 4.8 4.8 4.3 5.8 5.7 5.4 5.1
  5.7 5.1 5.4 5.1 4.6 5.1 4.8 5.  5.  5.2 5.2 4.7 4.8 5.4 5.2 5.5 4.9 5.
@@ -21,3 +21,5 @@ You are connected!
  6.2 6.1 6.4 7.2 7.4 7.9 6.4 6.3 6.1 7.7 6.3 6.4 6.  6.9 6.7 6.9 5.8 6.8
  6.7 6.7 6.3 6.5 6.2 5.9]
 You are being disconnected
+
+## The same dockerfile has been modified to adapt to fast_api, Please modify the Dockerfile accordingly
