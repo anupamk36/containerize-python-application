@@ -1,7 +1,7 @@
 FROM python:3.9
 
-ADD main.py .
+ADD iris.py .
 
 RUN pip install scikit-learn
 
-CMD ["python","./main.py"]
+CMD ["python","./iris.py"]
